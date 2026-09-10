@@ -67,3 +67,7 @@ SEO：AI招聘系统、简历解析、人才匹配、面试助手、Java招聘�
 ## 企业级招聘推荐发布
 
 新增 `POST /api/enterprise/recruitai/hiring-recommendation-release`，覆盖岗位标准、公平性、解释性、告知、人工决策、申诉、版本和数据保留，返回 `RELEASE / PANEL_REVIEW / BLOCKED`。详见 [推荐治理说明](docs/ENTERPRISE_HIRING_RECOMMENDATION.md)。
+
+## 候选人关键决定审计
+
+`POST /api/enterprise/recruitai/candidate-decision-audit` 对推进、录用或淘汰决定校验岗位证据、AI 告知、公平性、人工责任、评分卡、合理调整、申诉与数据保留，并生成证据覆盖率和稳定审计键。详见[候选人决定审计说明](docs/ENTERPRISE_CANDIDATE_DECISION_AUDIT.md)。

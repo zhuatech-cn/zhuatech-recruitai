@@ -11,5 +11,7 @@
 | POST | `/api/shopfloor/work-orders/{id}/reports` | 提交处理反馈 |
 | POST | `/api/ai/candidate/match` | 候选人与职位可解释匹配 |
 | POST | `/api/shopfloor/ai-risk-assessment` | AI 功能上线风险初筛 |
+| POST | `/api/enterprise/recruitai/hiring-recommendation-release` | 校验招聘推荐发布治理条件 |
+| POST | `/api/enterprise/recruitai/candidate-decision-audit` | 审计人工招聘决定、岗位证据与公平性 |
 
 除登录外均需 `Authorization: Bearer <token>`。社区演示实现不调用外部模型，不需要 API Key。
